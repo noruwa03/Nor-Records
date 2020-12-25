@@ -1,0 +1,1292 @@
+/* Css Reset */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+/* Font */
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/Poppins-Regular.ttf");
+}
+
+/* The screen resolutions of different devices are listed below:
+
+Mobile (Smartphone) max-width: 480px
+Low Resolution Tablets and ipads max-width: 767px
+Tablets Ipads portrait mode max-width:1024px
+Desktops max-width:1280px
+Huge size (Larger screen) max-width: 1281px and greater */
+
+.home {
+  height: 100vh;
+  background: url("/assets/images/pexels-photo-1037992.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  height: 17%;
+  margin: auto;
+}
+
+.header .record-name {
+  font-size: 28px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.header .sidebar ul {
+  position: absolute;
+  right: 19%;
+  display: inline-flex;
+}
+
+.header .sidebar ul li {
+  margin-left: 30px;
+}
+
+.header .sidebar ul li a {
+  opacity: 0.7;
+  color: #000000;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+
+.header .sidebar ul li a span {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 11%;
+  background: #ffffff;
+  transition: all 0.7s ease;
+}
+
+.header .sidebar ul li a:hover span {
+  width: 100%;
+}
+
+.desc {
+  position: absolute;
+  top: 36%;
+  left: 10%;
+  width: 310px;
+}
+
+.desc p span:nth-child(1) {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.desc p span:nth-child(2) {
+  display: block;
+  font-size: 18px;
+}
+
+.first-logo {
+  position: absolute;
+  bottom: 12%;
+  right: 10%;
+  width: 280px;
+}
+
+#services {
+  width: 100%;
+  padding: 70px;
+  position: relative;
+}
+
+#services .sr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#services .sr .services-heading {
+  background: url("/assets/used/services-heading.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150px;
+  width: 200px;
+  height: 50px;
+}
+
+#services .services-desc {
+  padding-top: 20px;
+  width: 600px;
+  font-size: 15px;
+}
+
+#services .services-desc img {
+  position: absolute;
+  left: 43%;
+  top: 13%;
+  width: 180px;
+  transform: translateX(-50%);
+}
+
+#services .srv {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 80px 0px;
+}
+
+#services .srv img {
+  cursor: pointer;
+}
+
+#recent-proj {
+  width: 100%;
+  padding: 60px;
+  position: relative;
+}
+
+#recent-proj .sr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#recent-proj .sr .recent-proj-heading {
+  background: url("/assets/used/recent-project.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 250px;
+  width: 250px;
+  height: 52px;
+}
+
+#recent-proj .musicians {
+  display: flex;
+  width: 650px;
+  height: 400px;
+  margin: 30px auto;
+  flex-wrap: wrap;
+}
+
+#recent-proj .musicians .pic-con1 {
+  width: 325px;
+  height: 200px;
+  background: url("/assets/images/omah-lay.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#recent-proj .musicians .pic-con1 .name {
+  font-size: 20px;
+  color: #c6e9e3;
+  font-weight: 700;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+#recent-proj .musicians .pic-con2 {
+  width: 325px;
+  height: 200px;
+  background: url("/assets/images/fireboy.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#recent-proj .musicians .pic-con2 .name {
+  font-size: 20px;
+  color: #c6e9e3;
+  font-weight: 700;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+#recent-proj .musicians .pic-con3 {
+  width: 325px;
+  height: 200px;
+  background: url("/assets/images/tems2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#recent-proj .musicians .pic-con3 .name {
+  font-size: 20px;
+  color: #c6e9e3;
+  font-weight: 700;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+#recent-proj .musicians .pic-con4 {
+  width: 325px;
+  height: 200px;
+  background: url("/assets/images/cheque.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#recent-proj .musicians .pic-con4 .name {
+  font-size: 20px;
+  color: #c6e9e3;
+  font-weight: 700;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.music .grp1 {
+  position: absolute;
+  top: 15%;
+  left: 29%;
+  transform: translateX(-50%);
+}
+
+.music .grp1 img {
+  width: 330px;
+}
+
+.music .grp2 {
+  position: absolute;
+  bottom: 42%;
+  right: 13%;
+}
+
+.music .grp2 img {
+  width: 230px;
+}
+
+#about {
+  padding: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about .logo-tx {
+  display: flex;
+  align-items: center;
+}
+
+#about .logo-tx img {
+  width: 300px;
+}
+
+#about .logo-tx .tx img {
+  width: 330px;
+  transform: translateY(-30px);
+}
+
+#about .logo-tx .tx {
+  margin-left: 50px;
+  width: 600px;
+}
+
+#about .logo-tx .tx p {
+  font-size: 16px;
+}
+
+#about .logo-tx .tx .btn a {
+  display: flex;
+  transform: translateY(20px);
+  align-items: center;
+  justify-content: center;
+  width: 159px;
+  height: 45px;
+}
+
+#about .logo-tx .tx a {
+  cursor: pointer;
+  font-weight: 700;
+  color: #000000;
+  padding: 10px 20px;
+  border: 2px solid #bee3dc;
+  font-size: 16px;
+}
+
+#contact {
+  padding: 60px 0px;
+  width: 100%;
+}
+
+
+#contact {
+  padding: 60px 0px;
+  width: 100%;
+  position: relative;
+}
+
+#contact .con-tx {
+  text-align: center;
+}
+
+#contact .con-tx div:nth-child(1) {
+  color: #FDCBCA;
+  font-weight: 500;
+  font-size: 37px;
+}
+
+#contact .con-tx div:nth-child(2){
+  color: #BEE3DC;
+  font-weight: 500;
+  font-size: 34px;
+  
+}
+
+#contact .con-tx img {
+  /* width: 160px; */
+  position: absolute;
+  top: 11%;
+  left: 44%;
+  transform: translateX(-50%);
+}
+
+#contact .open-add {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  width: 90%;
+  margin: 160px auto;
+}
+
+#contact .open-add .opening-time {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#contact .open-add .opening-time span {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+
+#contact .open-add .address{
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#contact .open-add .address span {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#contact .socials {
+  transform: translateY(-60px);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#contact .socials .con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #C6E9E3;
+  cursor: pointer;
+}
+
+#contact .socials .con img {
+  width: 20px;
+}
+
+#contact .socials .con:last-child img {
+  border-radius: 50%;
+}
+
+#contact footer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2%;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 17%;
+    margin: auto;
+  }
+
+  .header .record-name {
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .desc {
+    position: absolute;
+    top: 26%;
+    left: 10%;
+    width: 280px;
+  }
+
+  .desc p span:nth-child(1) {
+    font-weight: 600;
+    font-size: 27px;
+  }
+
+  .desc p span:nth-child(2) {
+    display: block;
+    font-size: 17px;
+  }
+
+  .first-logo {
+    display: none;
+  }
+
+  .logo2 {
+    background: url("/assets/used/small-logo.svg");
+    background-position: center;
+    background-size: 190px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 270px;
+    height: 270px;
+  }
+
+  #services {
+    width: 100%;
+    padding: 40px;
+  }
+
+  #services .sr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #services .sr .services-heading {
+    background: url("/assets/used/services-heading.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110px;
+    width: 170px;
+    height: 48px;
+  }
+
+  #services .services-desc {
+    padding-top: 14px;
+    width: 600px;
+    font-size: 14px;
+  }
+
+  #services .services-desc img {
+    position: absolute;
+    left: 33%;
+    top: 5%;
+    width: 150px;
+    transform: translateX(-50%);
+  }
+
+  #services .srv img {
+    margin: 10px 0px;
+    width: 215px;
+  }
+
+  #services .srv {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 60px 0px;
+    cursor: pointer;
+  }
+
+  #recent-proj {
+    width: 100%;
+    padding: 30px;
+    padding-bottom: 60px;
+    margin-bottom: 79px;
+    position: relative;
+  }
+
+  #recent-proj .sr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #recent-proj .sr .recent-proj-heading {
+    background: url("/assets/used/recent-project.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 190px;
+    width: 190px;
+    height: 52px;
+  }
+
+  #recent-proj .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #recent-proj .musicians {
+    display: flex;
+    width: 318px;
+    height: 800px;
+    margin: 30px auto;
+    flex-wrap: wrap;
+  }
+
+  #recent-proj .musicians .pic-con1 {
+    width: 325px;
+    height: 200px;
+    background: url("/assets/images/omah-lay.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  #recent-proj .musicians .pic-con1 .name {
+    font-size: 20px;
+    color: #c6e9e3;
+    font-weight: 700;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  #recent-proj .musicians .pic-con2 {
+    width: 325px;
+    height: 200px;
+    background: url("/assets/images/fireboy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  #recent-proj .musicians .pic-con2 .name {
+    font-size: 20px;
+    color: #c6e9e3;
+    font-weight: 700;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  #recent-proj .musicians .pic-con3 {
+    width: 325px;
+    height: 200px;
+    background: url("/assets/images/tems2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  #recent-proj .musicians .pic-con3 .name {
+    font-size: 20px;
+    color: #c6e9e3;
+    font-weight: 700;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  #recent-proj .musicians .pic-con4 {
+    width: 325px;
+    height: 200px;
+    background: url("/assets/images/cheque.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  #recent-proj .musicians .pic-con4 .name {
+    font-size: 20px;
+    color: #c6e9e3;
+    font-weight: 700;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  .music .grp1 {
+    position: absolute;
+    top: 55%;
+    left: 4%;
+  }
+
+  .music .grp1 img {
+    width: 280px;
+  }
+
+  .music .grp2 {
+    position: absolute;
+    top: 7%;
+    right: 0;
+  }
+
+  .music .grp2 img {
+    width: 180px;
+  }
+
+  #about {
+    padding: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #about .logo-tx {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #about .logo-tx img {
+    transform: translateY(20px);
+    width: 200px;
+  }
+
+  #about .logo-tx .tx img {
+    width: 250px;
+    transform: translateY(-300px);
+  }
+
+  #about .logo-tx .tx {
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 280px;
+  }
+
+  #about .logo-tx .tx p {
+    font-size: 15px;
+  }
+
+  #about .logo-tx .tx .btn a {
+    display: flex;
+    transform: translateY(20px);
+    align-items: center;
+    justify-content: center;
+    width: 159px;
+    height: 45px;
+  }
+
+  #about .logo-tx .tx a {
+    cursor: pointer;
+    font-weight: 700;
+    color: #000000;
+    padding: 10px 20px;
+    border: 2px solid #bee3dc;
+    font-size: 16px;
+  }
+
+  #contact {
+    padding: 60px 0px;
+    width: 100%;
+    position: relative;
+  }
+
+  #contact .con-tx {
+    text-align: center;
+  }
+
+  #contact .con-tx div:nth-child(1) {
+    color: #fdcbca;
+    font-weight: 500;
+    font-size: 25px;
+  }
+
+  #contact .con-tx div:nth-child(2) {
+    color: #bee3dc;
+    font-weight: 500;
+    font-size: 25px;
+  }
+
+  #contact .con-tx img {
+    width: 155px;
+    position: absolute;
+    top: 11%;
+    left: 34%;
+  }
+
+  #contact .open-add {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column wrap;
+    width: 80%;
+    margin: 140px auto;
+  }
+
+  #contact .open-add .opening-time {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  #contact .open-add .opening-time span {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  #contact .open-add .address {
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  #contact .open-add .address span {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  #contact .socials {
+    transform: translateY(-60px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #contact .socials .con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #c6e9e3;
+    cursor: pointer;
+  }
+
+  #contact .socials .con img {
+    width: 20px;
+  }
+
+  #contact .socials .con:last-child img {
+    border-radius: 50%;
+  }
+
+  #contact footer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2%;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
+
+
+/* @media screen and (max-width: 967px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 17%;
+    margin: auto;
+  }
+
+  .header .record-name {
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .desc {
+    position: absolute;
+    top: 28%;
+    left: 10%;
+    width: 280px;
+  }
+
+  .desc p span:nth-child(1) {
+    font-weight: 600;
+    font-size: 25px;
+  }
+
+  .desc p span:nth-child(2) {
+    display: block;
+    font-size: 16px;
+  }
+
+  .first-logo {
+    display: none;
+  }
+
+  .logo2 {
+    background: url("/assets/used/small-logo.svg");
+    background-position: center;
+    background-size: 190px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 270px;
+    height: 270px;
+  }
+
+  #services {
+    width: 100%;
+    padding: 40px;
+  }
+
+  #services .sr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #services .sr .services-heading {
+    background: url("/assets/used/services-heading.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110px;
+    width: 170px;
+    height: 48px;
+  }
+
+  #services .services-desc {
+    padding-top: 14px;
+    width: 600px;
+    font-size: 13px;
+  }
+
+  #services .services-desc img {
+    position: absolute;
+    left: 43%;
+    top: 11%;
+    width: 150px;
+    transform: translateX(-50%);
+  }
+
+  #services .srv img {
+    margin: 10px 0px;
+    width: 190px;
+  }
+
+  #services .srv {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 60px 0px;
+    cursor: pointer;
+  }
+
+  #recent-proj {
+    width: 100%;
+    padding: 30px;
+    padding-bottom: 60px;
+    margin-bottom: 79px;
+    position: relative;
+  }
+
+  #recent-proj .sr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #recent-proj .sr .recent-proj-heading {
+    background: url("/assets/used/recent-project.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 190px;
+    width: 190px;
+    height: 52px;
+  }
+
+  #recent-proj .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #recent-proj .musicians {
+    display: flex;
+    width: 600px;
+    height: 360px;
+    background: red;
+    margin: 30px auto;
+    flex-wrap: wrap;
+  }
+
+  #recent-proj .musicians .pic-con1 {
+    width: 300px;
+    height: 180px;
+    background: url("/assets/images/omah-lay.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  #recent-proj .musicians .pic-con1 .name {
+    font-size: 20px;
+    color: #c6e9e3;
+    font-weight: 700;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  #recent-proj .musicians .pic-con2 {
+    width: 300px;
+    height: 180px;
+    background: url("/assets/images/fireboy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  #recent-proj .musicians .pic-con2 .name {
+    font-size: 20px;
+    color: #c6e9e3;
+    font-weight: 700;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  #recent-proj .musicians .pic-con3 {
+    width: 300px;
+    height: 180px;
+    background: url("/assets/images/tems2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  #recent-proj .musicians .pic-con3 .name {
+    font-size: 20px;
+    color: #c6e9e3;
+    font-weight: 700;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  #recent-proj .musicians .pic-con4 {
+    width: 300px;
+    height: 180px;
+    background: url("/assets/images/cheque.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  #recent-proj .musicians .pic-con4 .name {
+    font-size: 20px;
+    color: #c6e9e3;
+    font-weight: 700;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+
+  .music .grp1 {
+    position: absolute;
+    top: 55%;
+    left: 4%;
+  }
+
+  .music .grp1 img {
+    width: 280px;
+  }
+
+  .music .grp2 {
+    position: absolute;
+    top: 7%;
+    right: 0;
+  }
+
+  .music .grp2 img {
+    width: 180px;
+  }
+  
+
+  #about {
+    padding: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #about .logo-tx {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #about .logo-tx img {
+    width: 230px;
+  }
+  
+  #about .logo-tx .tx img {
+    width: 330px;
+    transform: translateY(-30px);
+  }
+  
+  #about .logo-tx .tx {
+    margin-left: 30px;
+    width: 400px;
+  }
+  
+  #about .logo-tx .tx p {
+    font-size: 13px;
+  }
+  
+  #about .logo-tx .tx .btn a {
+    display: flex;
+    transform: translateY(20px);
+    align-items: center;
+    justify-content: center;
+    width: 142px;
+    height: 43px;
+  }
+  
+  #about .logo-tx .tx a {
+    cursor: pointer;
+    font-weight: 700;
+    color: #000000;
+    padding: 10px 20px;
+    border: 2px solid #bee3dc;
+    font-size: 13px;
+  }
+  
+
+  #contact {
+    padding: 60px 0px;
+    width: 100%;
+    position: relative;
+  }
+
+  #contact .con-tx {
+    text-align: center;
+  }
+
+  #contact .con-tx div:nth-child(1) {
+    color: #fdcbca;
+    font-weight: 500;
+    font-size: 25px;
+  }
+
+  #contact .con-tx div:nth-child(2) {
+    color: #bee3dc;
+    font-weight: 500;
+    font-size: 25px;
+  }
+
+  #contact .con-tx img {
+    width: 155px;
+    position: absolute;
+    top: 11.5%;
+    left: 43.5%;
+  }
+
+  #contact .open-add {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 80%;
+    margin: 140px auto;
+  }
+
+  #contact .open-add .opening-time {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  #contact .open-add .opening-time span {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  #contact .open-add .address {
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  #contact .open-add .address span {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  #contact .socials {
+    transform: translateY(-60px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #contact .socials .con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #c6e9e3;
+    cursor: pointer;
+  }
+
+  #contact .socials .con img {
+    width: 20px;
+  }
+
+  #contact .socials .con:last-child img {
+    border-radius: 50%;
+  }
+
+  #contact footer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2%;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+ */
+
+
+
+/* Menu */
+@media screen and (max-width: 970px) {
+  .header .sidebar ul {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: #999999;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .header .sidebar.active ul {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .header .sidebar ul li {
+    margin-top: 30px;
+  }
+
+  .header .sidebar ul li a {
+    opacity: 0.7;
+    color: #000000;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+  }
+
+  .header .sidebar ul li a span {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 11%;
+    background: #ffffff;
+    transition: all 0.7s ease;
+  }
+
+  .header .sidebar ul li a:hover span {
+    width: 100%;
+  }
+
+  .header .menu {
+    background: url("/assets/icons/menu.svg");
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: center;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    top: 5.1%;
+    right: 10%;
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  .header .menu.active {
+    background: url("/assets/images/cancel.png");
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: center;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    top: 5.1%;
+    right: 10%;
+    cursor: pointer;
+    z-index: 3;
+    filter: invert(1);
+  }
+}
